@@ -60,6 +60,25 @@
        url('fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+.user-icon-btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: transparent;
+  transition: background-color 1.3s;
+  border-radius: 50%; /* opcional: para fondo circular */
+}
+
+.user-icon-btn img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 </style>
 
 
@@ -95,6 +114,9 @@
       <a href="#" aria-label="Shopping Cart" class="btn btn-outline-light">
         <img src="img/shopping-cart-icon.svg" alt="Carrito" width="25" height="25" class="me-2" style="filter: brightness(0) invert(1);">
         <small>Mi Carrito</small>
+      </a>
+      <a href="system.html" aria-label="Inicio de sesión" class="user-icon-btn" >
+        <img src="img/user-icon.svg" alt="Usuario" class="user-icon-default" >
       </a>
 </div>
 </nav>
@@ -138,7 +160,7 @@
           <p class="card-text" style="margin-left: 10px; margin-top: 10px;"><strong>29.99€</strong></p>
           <div class="d-flex align-items-center mb-3">
             <label class="me-2" style="margin-left: 10px;">Cantidad:</label>
-            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 100px;">
+            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 60px;">
             <button class="btn" style="margin-left: 10px; margin-right: 10px; border: 2px solid white; border-radius: 20px; color: white; background-color: transparent; width: 100%; transition: all 0.3s;" onmouseover="this.style.backgroundColor='white'; this.style.color='black';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">Añadir al carrito</button>
           </div>
           </div>
@@ -155,7 +177,7 @@
           <p class="card-text" style="margin-left: 10px; margin-top: 10px;"><strong>39.99€</strong></p>
           <div class="d-flex align-items-center mb-3">
             <label class="me-2" style="margin-left: 10px;">Cantidad:</label>
-            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 100px;">
+            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 60px;">
             <button class="btn" style="margin-left: 10px; margin-right: 10px; border: 2px solid white; border-radius: 20px; color: white; background-color: transparent; width: 100%; transition: all 0.3s;" onmouseover="this.style.backgroundColor='white'; this.style.color='black';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">Añadir al carrito</button>
           </div>
           </div>
@@ -172,7 +194,7 @@
           <p class="card-text" style="margin-left: 10px; margin-top: 10px;"><strong>39.99€</strong></p>
           <div class="d-flex align-items-center mb-3">
             <label class="me-2" style="margin-left: 10px;">Cantidad:</label>
-            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 100px;">
+            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 60px;">
             <button class="btn" style="margin-left: 10px; margin-right: 10px; border: 2px solid white; border-radius: 20px; color: white; background-color: transparent; width: 100%;transition: all 0.3s;" onmouseover="this.style.backgroundColor='white'; this.style.color='black';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">Añadir al carrito</button>
           </div>
           </div>
@@ -189,7 +211,7 @@
           <p class="card-text" style="margin-left: 10px; margin-top: 10px;"><strong>34.99€</strong></p>
           <div class="d-flex align-items-center mb-3">
             <label class="me-2" style="margin-left: 10px;">Cantidad:</label>
-            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 100px;">
+            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 60px;">
             <button class="btn" style="margin-left: 10px; margin-right: 10px; border: 2px solid white; border-radius: 20px; color: white; background-color: transparent; width: 100%;transition: all 0.3s;" onmouseover="this.style.backgroundColor='white'; this.style.color='black';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">Añadir al carrito</button>
           </div>
           </div>
@@ -210,7 +232,7 @@
           <p class="card-text" style="margin-left: 10px; margin-top: 10px;"><strong>34.99€</strong></p>
           <div class="d-flex align-items-center mb-3">
             <label class="me-2" style="margin-left: 10px;">Cantidad:</label>
-            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 100px;">
+            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 60px;">
             <button class="btn" style="margin-left: 10px; margin-right: 10px; border: 2px solid white; border-radius: 20px; color: white; background-color: transparent; width: 100%;transition: all 0.3s;" onmouseover="this.style.backgroundColor='white'; this.style.color='black';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">Añadir al carrito</button>
           </div>
           </div>
@@ -227,7 +249,7 @@
           <p class="card-text" style="margin-left: 10px; margin-top: 10px;"><strong>34.99€</strong></p>
           <div class="d-flex align-items-center mb-3">
             <label class="me-2" style="margin-left: 10px;">Cantidad:</label>
-            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 100px;">
+            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 60px;">
             <button class="btn" style="margin-left: 10px; margin-right: 10px; border: 2px solid white; border-radius: 20px; color: white; background-color: transparent; width: 100%;transition: all 0.3s;" onmouseover="this.style.backgroundColor='white'; this.style.color='black';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">Añadir al carrito</button>
           </div>
           </div>
@@ -244,7 +266,7 @@
           <p class="card-text" style="margin-left: 10px; margin-top: 10px;"><strong>34.99€</strong></p>
           <div class="d-flex align-items-center mb-3">
             <label class="me-2" style="margin-left: 10px;">Cantidad:</label>
-            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 100px;">
+            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 60px;">
             <button class="btn" style="margin-left: 10px; margin-right: 10px; border: 2px solid white; border-radius: 20px; color: white; background-color: transparent; width: 100%;transition: all 0.3s;" onmouseover="this.style.backgroundColor='white'; this.style.color='black';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">Añadir al carrito</button>
           </div>
           </div>
@@ -261,7 +283,7 @@
           <p class="card-text" style="margin-left: 10px; margin-top: 10px;"><strong>34.99€</strong></p>
           <div class="d-flex align-items-center mb-3">
             <label class="me-2" style="margin-left: 10px;">Cantidad:</label>
-            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 100px;">
+            <input type="number" class="form-control w-25" value="1" min="1" style="max-width: 60px;">
             <button class="btn" style="margin-left: 10px; margin-right: 10px; border: 2px solid white; border-radius: 20px; color: white; background-color: transparent; width: 100%;transition: all 0.3s;" onmouseover="this.style.backgroundColor='white'; this.style.color='black';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">Añadir al carrito</button>
           </div>
           </div>
